@@ -1,0 +1,34 @@
+{
+  "name": "homebridge-aurelux",
+  "displayName": "Homebridge Aurelux",
+  "version": "0.1.0",
+  "description": "Control Aurelux (Brightown / Minetom IOTBT) Bluetooth string lights from Apple Home",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "mlp2069",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mlp2069/homebridge-aurelux.git"
+  },
+  "keywords": [
+    "homebridge-plugin",
+    "aurelux",
+    "bluetooth",
+    "christmas-lights"
+  ],
+  "engines": {
+    "homebridge": "^1.8.0 || ^2.0.0",
+    "node": "^20 || ^22 || ^24"
+  },
+  "files": [
+    "index.js",
+    "packets.js",
+    "config.schema.json"
+  ],
+  "scripts": {
+    "test": "node --test test.js"
+  },
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-26"
+  }
+}

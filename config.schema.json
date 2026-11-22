@@ -1,0 +1,82 @@
+{
+  "pluginAlias": "Aurelux",
+  "pluginType": "accessory",
+  "singular": false,
+  "headerDisplay": "Aurelux (Brightown / Minetom) Bluetooth string lights. Close the Aurelux app before Homebridge connects.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Name",
+        "type": "string",
+        "default": "Christmas Lights",
+        "required": true
+      },
+      "deviceName": {
+        "title": "Bluetooth Name",
+        "type": "string",
+        "placeholder": "IOTBT1A2B",
+        "required": true,
+        "description": "Starts with IOTBT. Find it with the nRF Connect app."
+      },
+      "scenes": {
+        "title": "Scene Switches",
+        "type": "array",
+        "uniqueItems": true,
+        "default": [
+          "Christmas 1",
+          "Christmas 2",
+          "Christmas 3",
+          "Candy Cane"
+        ],
+        "items": {
+          "type": "string",
+          "enum": [
+            "Christmas 1",
+            "Christmas 2",
+            "Christmas 3",
+            "Halloween 1",
+            "Halloween 2",
+            "Halloween 3",
+            "Valentine's Day",
+            "Thanksgiving",
+            "Mother's Day",
+            "Father's Day",
+            "Forest Day",
+            "New Year",
+            "Children's Day",
+            "Easter",
+            "Birthday",
+            "St. Patrick's Day",
+            "Pumpkin Festival",
+            "Puppet Festival",
+            "Easter Eggs",
+            "Candy Cane",
+            "Carnival",
+            "Lemon Festival",
+            "Beer Festival",
+            "Midsummer Festival",
+            "Meteor Shower",
+            "Fantasy Fireworks",
+            "Summer Wind",
+            "Moonlight",
+            "Journey to the Planet",
+            "Dynamic Rhythm",
+            "Champagne Party",
+            "Movie Night",
+            "Astral Summit",
+            "Star Shining",
+            "Meteoric Crest",
+            "Dynamic Flow Line",
+            "Science",
+            "Midnight City",
+            "Advertising",
+            "Fireworks Festival",
+            "Rainbow Water",
+            "Quality Stroke"
+          ]
+        }
+      }
+    }
+  }
+}
